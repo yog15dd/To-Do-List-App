@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do App!!</title>
+    <script src="/index.js"></script>
+    <style>
+        #addbutton{
+            color: white;
+            background-color: rgb(42, 81, 165);
+            width: 10%;
+            font-weight: bold;
+            padding: 4px;
+            width: fit-content;
+            border-radius: 15px;
+        }
+        #todos{
+            border: 1px solid grey;
+            height: fit-content;
+            margin-left: 30%;
+            margin-right: 20%;
+            width: fit-content;
+            border-radius: 15px;
+            background-color: darkorange;
+            display: none;
+        }
+        #input{
+            border-radius: 2px;
+            padding: 10px;
+            width: 30%;
+            border-radius: 10px;
+        }
+        #clearall{
+            color: black;
+            background-color: greenyellow;
+            width: 5%;
+            font-weight: bold;
+            padding: 4px;
+            width: fit-content;
+            border-radius: 15px;
+            margin-left: 30%;
+        }
+        .closeButton{
+            font-size: 30px;
+            margin-top: -5px;
+            background-color: pink;
+            width: fit-content;
+            color: black;
+            border-radius: 30px;
+        }
+        .closeButton:hover{
+            cursor: pointer;
+            color: red;
+        }
+        .listItem{
+            font-size: 20px;
+            font-weight: 100;
+            border: 1px solid grey;
+            border-radius: 10px;
+            background-color: burlywood;
+            color: yellow;
+            width: fit-content;
+            position: relative;
+            margin: 10px;
+        }
+        h2 {
+            color: orangered;
+            margin-left: 40%;
+            font-size: 50px;
+        }
+        .listmaker{
+            margin-left: 35%;
+            margin-top: 40px;
+        }
+        body{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="listmaker">
+        <input type="text" placeholder="To-do" id="input">
+        <button id="addbutton" onClick="addItem()">Add</button>
+    </div>
+    <h2>To-Do's List</h2>
+    <hr>
+    <button id="clearall" onclick="clearAll()">Clear All</button>
+    <ul id="todos">
+    </ul>
+</body>
+</html>
